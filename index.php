@@ -74,4 +74,4 @@ exit;
 $loginUrl = $helper->getLoginUrl('http://localhost/FB.Login/index.php', $permissions);
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }
-?>
+?>     

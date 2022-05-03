@@ -21,6 +21,7 @@
                 <li><?php echo $_SESSION['fb_name']; ?></li>
                 <h3>Facebook Email</h3>
                 <li><?php echo $_SESSION['fb_email']; ?></li>
+                <a href="plugin.php">Facebook plugin</a>
                 <a href="logout.php?logout">Facebook Logout</a>
         </ul>
 		</div>
