@@ -15,7 +15,6 @@
         <div class="avatar">
                 <h3>Image</h3>
                 <li><?php echo $_SESSION['fb_pic']?></li>
-				<h3 class="name">Trần Hữu Hoàng</h3>
                 <h3>Facebook ID</h3>
                 <li><?php echo  $_SESSION['fb_id']; ?></li>
                 <h3>Facebook fullname</h3>
