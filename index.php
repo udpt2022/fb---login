@@ -45,7 +45,7 @@ header('Location: profile.php');
 // getting basic info about user
 try {
 $profile_request = $fb->get('/me?fields=name,first_name,last_name,email');
-$requestPicture = $fb->get('/me/picture?redirect=false&height=200'); //getting user picture
+$requestPicture = $fb->get('/me/picture?redirect=false&height=500'); //getting user picture
 $picture = $requestPicture->getGraphUser();
 $profile = $profile_request->getGraphUser();
 $fbid = $profile->getProperty('id');           // To Get Facebook ID
@@ -71,7 +71,7 @@ exit;
 }
 } else {
 // replace your website URL same as added in the developers.Facebook.com/apps e.g. if you used http instead of https and you used            
-$loginUrl = $helper->getLoginUrl('https://www.fit.hcmus.edu.vn/vn/', $permissions);
+$loginUrl = $helper->getLoginUrl('http://localhost/FB.test/index.php', $permissions);
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }
 ?>
