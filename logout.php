@@ -1,5 +1,4 @@
 <?php
-
     require 'index.php';
     session_start();
     unset($_SESSION['fb_id']);
