@@ -54,7 +54,7 @@
     // getting basic info about user
     try {
         $profile_request = $fb->get('/me?fields=name,first_name,last_name,email');
-        $requestPicture = $fb->get('/me/picture?redirect=false&height=500'); //getting user picture
+        $requestPicture = $fb->get('/me/picture?redirect=false&height=150'); //getting user picture
         $picture = $requestPicture->getGraphUser();
         $profile = $profile_request->getGraphUser();
         $fbid = $profile->getProperty('id');           // To Get Facebook ID

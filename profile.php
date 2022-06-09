@@ -48,6 +48,7 @@
                 </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#">Contact</a></li>
+                <li><a href="plugin.php" class="nav-link scrollto">Facebook Plugin</a></li>
                 <li><a href="logout.php" class="nav-link scrollto">Đăng Xuất</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
