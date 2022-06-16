@@ -1,5 +1,11 @@
 <?php
-    ?>
+session_start();
+if(!isset($_SESSION['facebook_access_token']))
+    {
+        header("Location:index.php");
+    };
+?>
+    
     <head>
     <title>Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -168,32 +174,4 @@
     </div>
     </div>
 </footer><!-- End Footer -->
-    <script>
-        window.addEventListener('next', function(){
-            console.log('forward button clicked');
-        }, false);
-        window.addEventListener('previous', function(){
-            console.log('back button clicked');
-            location.reload();
-        }, false);
-        if(window.history && history.pushState){ // check for history api support
-                window.addEventListener('load', function(){
-                    // create history states
-                    history.pushState(-1, null); // back state
-                    history.pushState(0, null); // main state
-                    history.pushState(1, null); // forward state
-                    history.go(-1); // start in main state
-                    this.addEventListener('popstate', function(event, state){
-                        // check history state and fire custom events
-                    if(state = event.state){
-                    event = document.createEvent('Event');
-                    event.initEvent(state > 0 ? 'next' : 'previous', true, true);
-                    this.dispatchEvent(event);
-                    // reset state
-                    history.go(-state);
-                            }
-                        }, false);
-                    }, false);
-        }
-    </script>
 </html>
