@@ -5,8 +5,8 @@
     //start session
     session_start();
     $fb = new Facebook\Facebook([
-    'app_id' => '1050420615831702', //fb app id
-    'app_secret' => 'e49cc2039dc06856277e7934e9aea32d',// fb app secret id
+    'app_id' => '', //fb app id
+    'app_secret' => '',// fb app secret id
     'default_graph_version' => 'v2.5', //graph version
     ]);
 
